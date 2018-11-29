@@ -3,146 +3,170 @@ package View;
 import java.util.Scanner;
 
 import Model.Mission;
-import Model.Question;
 
 public class ViewConsole {
 
+	/**
+	 * Ici nous Ã©crivons toutes les missions a rÃ©aliser
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		
-		String m1 = "Faire en sorte que vos vieux vêtements soit réutiliser\n" + 
-				"(a) réussi\n" + "(b) pas encore fait";
+		String m1 = "Faire en sorte que vos vieux vÃªtements soit rÃ©utiliser\n" + 
+				"(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
-		String m2 = "Ne plus acheter de bouteille d’eau\n" + 
-				"(a) réussi\n" + "(b) pas encore fait";
+		String m2 = "Ne plus acheter de bouteille dâ€™eau\n" + 
+				"(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
 		String m3 = "Consommer locale\n" + 
-                "(a) réussi\n" + "(b) pas encore fait";
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
 
 		String m4 = "Manger de la viande 2 fois par semaine (max)\n" + 
-                "(a) réussi\n" + "(b) pas encore fait";
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
 
 		String m5 = "Faire un composte dans le fond de son jardin \n" +
-                "(a) réussi\n" + "(b) pas encore fait";
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
 
-		String m6 = "Utiliser des sac réutilisable pour aller faire tes courses\n" +
-               "(a) réussi\n" + "(b) pas encore fait";
+		String m6 = "Utiliser des sac rÃ©utilisable pour aller faire tes courses\n" +
+               "(a) rÃ©ussi\n" + "(b) pas encore fait";
 
-		String m7 = "Acheter en vrac (pâte, riz, graines, …) en ramenant tes propre pots (en verre)\n" + 
-                "(a) réussi\n" + "(b) pas encore fait";
+		String m7 = "Acheter en vrac (pÃ¢te, riz, graines, â€¦) en ramenant tes propre pots (en verre)\n" + 
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
 
-		String m8 = "Limiter vos achats compulsif souvent entouré de plastique\n" + 
-                "(a) réussi\n" + "(b) pas encore fait";
+		String m8 = "Limiter vos achats compulsif souvent entourÃ© de plastique\n" + 
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
 
 		String m9 = "Remplacer les cotons-tiges jetables par un cure-oreille\n" +
-                "(a) réussi\n" + "(b) pas encore fait";
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
-        String m10 = "Acheter ses vêtement en seconde main (ex: https://unitedwardro.be/)\n" +
-                "(a) réussi\n" + "(b) pas encore fait";
+        String m10 = "Acheter ses vÃªtement en seconde main (ex: https://unitedwardro.be/)\n" +
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
          
-        String m11 = "Réutiliser le materielle scolaire qui fonctionne encore ou est en bonne état\n" +
-                "(a) réussi\n" + "(b) pas encore fait";
+        String m11 = "RÃ©utiliser le materielle scolaire qui fonctionne encore ou est en bonne Ã©tat\n" +
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
          
-        String m12 = "S’équiper pour des piques-niques et collation zéro déchet pour ce passer d’emballage jetable\n" +
-                "(a) réussi\n" + "(b) pas encore fait";
+        String m12 = "Sâ€™Ã©quiper pour des piques-niques et collation zÃ©ro dÃ©chet pour ce passer dâ€™emballage jetable\n" +
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
          
-        String m13 = "Acheter ses boissons en bouteilles consignées\n" +
-                "(a) réussi\n" + "(b) pas encore fait";
+        String m13 = "Acheter ses boissons en bouteilles consignÃ©es\n" +
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
          
-        String m14 = "Appareil cassé ? On essaye de le faire réparer avant de le remplacer (ex: à un repair café)\n" +
-                "(a) réussi\n" + "(b) pas encore fait";
+        String m14 = "Appareil cassÃ© ? On essaye de le faire rÃ©parer avant de le remplacer (ex: Ã  un repair cafÃ©)\n" +
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
-		String m15 = "Préparer son café sans emballage (une cafetière italienne ou des capsules réutilisables)\n" + 
-                "(a) réussi\n" + "(b) pas encore fait";
+		String m15 = "PrÃ©parer son cafÃ© sans emballage (une cafetiÃ¨re italienne ou des capsules rÃ©utilisables)\n" + 
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
 
-		String m16 = "Choisir des cosmétiques solides (savon en bloc, shampoing en bloc, déo, ...)" + 
-                "(a) réussi\n" + "(b) pas encore fait";
+		String m16 = "Choisir des cosmÃ©tiques solides (savon en bloc, shampoing en bloc, dÃ©o, ...)" + 
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
 
-		String m17 = "Trier tes déchets (normale, PMC, verre, carton, bientôt une pour le plastique)\n" +
-            "(a) réussi\n" + "(b) pas encore fait";
+		String m17 = "Trier tes dÃ©chets (normale, PMC, verre, carton, bientÃ´t une pour le plastique)\n" +
+            "(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
 		String m18 = "Demander au serveur de ne pas mettre une paille dans votre boisson et" +
-            " si il l’a fait lui expliquer que cela n’était vraiment pas nécessaire." + 
-            "(a) réussi\n" + "(b) pas encore fait";
+            " si il lâ€™a fait lui expliquer que cela nâ€™Ã©tait vraiment pas nÃ©cessaire." + 
+            "(a) rÃ©ussi\n" + "(b) pas encore fait";
 
 		String m19 = "Prendre des douches de max 10 minutes" + 
-            "(a) réussi\n" + "(b) pas encore fait";
+            "(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
-		String m20 = "Eteindre la lumière à chaque fois que vous sortez d’une pièce" + 
-            "(a) réussi\n" + "(b) pas encore fait";
+		String m20 = "Eteindre la lumiÃ¨re Ã  chaque fois que vous sortez dâ€™une piÃ¨ce" + 
+            "(a) rÃ©ussi\n" + "(b) pas encore fait";
 
-		String m21 = "Utiliser les cycle cours ou écologique de vos appareil ménager\n" +
-            "(a) réussi\n" + "(b) pas encore fait";
+		String m21 = "Utiliser les cycle cours ou Ã©cologique de vos appareil mÃ©nager\n" +
+            "(a) rÃ©ussi\n" + "(b) pas encore fait";
 
-		String m22 = "Elaborer vos menu de la semaine à l’avance pour éviter au maximum d’acheter " +
-            "des choses emballées dans du plastique." + 
-            "(a) réussi\n" + "(b) pas encore fait";
+		String m22 = "Elaborer vos menu de la semaine Ã  lâ€™avance pour Ã©viter au maximum dâ€™acheter " +
+            "des choses emballÃ©es dans du plastique." + 
+            "(a) rÃ©ussi\n" + "(b) pas encore fait";
 
 		String m23 = "Ne pas accepter de flyers dans les rues, lisez-le puis rendez-le gentiment" + 
-            "(a) réussi\n" + "(b) pas encore fait";
+            "(a) rÃ©ussi\n" + "(b) pas encore fait";
 
-		String m24 = "Crée ton propre cellophane à l’aide de tissu en coton organic et de cire d'abeille en bloc (ex: tuto youtube) " + 
-            "(a) réussi\n" + "(b) pas encore fait";
+		String m24 = "CrÃ©e ton propre cellophane Ã  lâ€™aide de tissu en coton organic et de cire d'abeille en bloc (ex: tuto youtube) " + 
+            "(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
-		String m25 = "Ne pas suivre la mode et essayer d’acheter l'essentiel (ce qui manque dans ta garde robe)\n" +
-                "(a) réussi\n" + "(b) pas encore fait";
+		String m25 = "Ne pas suivre la mode et essayer dâ€™acheter l'essentiel (ce qui manque dans ta garde robe)\n" +
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
-		String m26 = "Fait ton gommage du visage avec le café utilisé pour ton café du matin\n" +
-                "(a) réussi\n" + "(b) pas encore fait";
+		String m26 = "Fait ton gommage du visage avec le cafÃ© utilisÃ© pour ton cafÃ© du matin\n" +
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
-		String m27 = "Trier les bouchons de liège pour le recyclage (mets-les dans un grand vase cela peut être très joli en décoration)\n" +
-                "(a) réussi\n" + "(b) pas encore fait";
+		String m27 = "Trier les bouchons de liÃ¨ge pour le recyclage (mets-les dans un grand vase cela peut Ãªtre trÃ¨s joli en dÃ©coration)\n" +
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
 		String m28 = "Ne pas demander le ticket de caisse si cela est possible\n" +
-                "(a) réussi\n" + "(b) pas encore fait";
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
-		String m29 = "Utiliser des lingettes et disques démaquillants lavables\n" +
-                "(a) réussi\n" + "(b) pas encore fait";
+		String m29 = "Utiliser des lingettes et disques dÃ©maquillants lavables\n" +
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
-		String m30 = "Pour les filles, essayer/adopter la coupe menstruelle ou les serviettes hygiéniques lavables\n" +
-               "(a) réussi\n" + "(b) pas encore fait";
+		String m30 = "Pour les filles, essayer/adopter la coupe menstruelle ou les serviettes hygiÃ©niques lavables\n" +
+               "(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
-		String m31 = "Utiliser des produits rechargeables (lames de rasoir, ancre de stabilo, porte mine, … )\n" +
-                "(a) réussi\n" + "(b) pas encore fait";
+		String m31 = "Utiliser des produits rechargeables (lames de rasoir, ancre de stabilo, porte mine, â€¦ )\n" +
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
-		String m32 = "Nettoyer avec quelques produits d'entretien simples. (eau, savon noir ou de marseille, vinaigre blanc, bicarbonate de soude, microfibre). Ces 5 produits permettent de (presque) tout nettoyer. Écologique et économique ! Et si on les achète en vrac ou en grands conditionnements, on réduit encore plus les déchets !\n" +
-                "(a) réussi\n" + "(b) pas encore fait";
+		String m32 = "Nettoyer avec quelques produits d'entretien simples. (eau, savon noir ou de marseille, vinaigre blanc, bicarbonate de soude, microfibre). Ces 5 produits permettent de (presque) tout nettoyer. Ã‰cologique et Ã©conomique ! Et si on les achÃ¨te en vrac ou en grands conditionnements, on rÃ©duit encore plus les dÃ©chets !\n" +
+                "(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
-		String m33 = "Acheter des fruits et légumes de saison\n" +
-                 "(a) réussi\n" + "(b) pas encore fait";
+		String m33 = "Acheter des fruits et lÃ©gumes de saison\n" +
+                 "(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
 		String m34 = "Faire un potager\n" +
-                 "(a) réussi\n" + "(b) pas encore fait";
+                 "(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
-		String m35 = "Planter des graines et faire votre propre basilic, persil, thym, romarin, …\n" +
-                 "(a) réussi\n" + "(b) pas encore fait";
+		String m35 = "Planter des graines et faire votre propre basilic, persil, thym, romarin, â€¦\n" +
+                 "(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
-		String m36 = "Mets un autocollant devant ta boite au lettre pour dire stop à la pub\n" +
-                 "(a) réussi\n" + "(b) pas encore fait";
+		String m36 = "Mets un autocollant devant ta boite au lettre pour dire stop Ã  la pub\n" +
+                 "(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
-		String m37 = "Ne plus acheter des couverts, des gobelet et des pailles en plastique ainsi que des d’assiette en carton\n" +
-                 "(a) réussi\n" + "(b) pas encore fait";
+		String m37 = "Ne plus acheter des couverts, des gobelet et des pailles en plastique ainsi que des dâ€™assiette en carton\n" +
+                 "(a) rÃ©ussi\n" + "(b) pas encore fait";
 		
 		//Mission a = new Mission(m1,"n",1,1);
 
 		Mission [] missions  = {
 				new Mission(m1,"n",1,1,50),
 				new Mission(m2,"n",1,2,100),
-				new Mission(m3,"n",1,3,150)
+				new Mission(m3,"n",1,3,150),
+				new Mission(m4,"n",2,1,50),
+				new Mission(m5,"n",2,2,100),
+				new Mission(m6,"n",2,3,150),
+				new Mission(m7,"n",3,1,50),
+				new Mission(m8,"n",3,2,100),
+				new Mission(m9,"n",3,3,150),
+				new Mission(m10,"n",4,1,50),
+				new Mission(m11,"n",4,2,100),
+				new Mission(m12,"n",4,3,150),
+				new Mission(m13,"n",5,1,50),
+				new Mission(m14,"n",5,2,100),
+				new Mission(m15,"n",5,3,150),
 		};
 		takeTest(missions);
 		
 	}	
 	
+	/**
+	 * Ici la fonction affiche successivement les 3 missions contenue dans chaque lvl et rÃ©pÃ¨te en cas d'erreurs
+	 * @param missions
+	 */
 	public static void takeTest(Mission [] missions) {
 		int score = 0;//accumule exp
 		Scanner keyboardInput = new Scanner(System.in);
+	
 		for(int i = 0; i< missions.length; i++) {
-			System.out.println(missions[i].getContenu());
-			String answer = keyboardInput.nextLine();//prend valeur tapé au clavier
+			System.out.println("Level " + missions[i].getLevel());
+			System.out.println("Mission " +missions[i].getNumMiss()+ ": \n" +missions[i].getContenu());
+			String answer = keyboardInput.nextLine();//prend valeur tapÃ© au clavier
+			
 			if(answer.equals("a")) {
 				score += missions[i].getExp();
-				//joueur.setExp(mission[i].getXp());
-				System.out.println("Tu as " + score + " d'expérience");
+				System.out.println("Tu as " + score + " d'expÃ©rience\n");
+			}else if(answer.equals("b")){
+				missions[i--].getContenu();
+				System.out.println("Courage ! Tu peux y arriver !");
 			}
 		}
 	}

@@ -1,22 +1,72 @@
 package Model;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Mission {
+	
+	private static String url = "jdbc:mysql://localhost/sys?useTimerzone=true&serverTimezone=UTC";
+	private static String user = "root";
+	private static String pwd = "root";
+	
+	private Connection myConnection = null;//pas de static car indépendante à chaque mission
+	private Statement myState = null;
+	private ResultSet myResult = null;
+	
+	private String sql = "";
+	private String driver;
 
 	private String contenu;//question
 	private String type;//joker ou normal
 	private int level;//le niveau de la mission
-	private int numMiss;//dequel numéro de mission il s'agit dans le level
+	//private int numMiss;//dequel numéro de mission il s'agit dans le level
 	//private String etat;//type d'état de la mission si elle est réussi, attente ou impossible//créer liste réussi, impossible et attente
 	private int exp;
 	//private Etat etat;//etat de la mission si elle est réussi, attente ou impossible
+	
 
-	public Mission(String contenu,  String type, int level, int num, int exp) {
-		this.contenu = contenu;
-		this.type = type;
+
+	public Mission(int level) {
 		this.level = level;
-		this.numMiss = num;
-		this.exp = exp;
+		//System.out.println(this.level);
+		try {
+			Connexion();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
+	
+	public Object Connexion (){
+		try {
+			
+			//Class.forName("com.mysql.jdbc.Driver");
+			
+			this.driver = "com.mysql.cj.jdbc.Driver";
+			this.myConnection = DriverManager.getConnection(url, user, pwd);
+			this.myState = myConnection.createStatement();
+			this.sql = "";
+			this.myResult = myState.executeQuery("select contenu,exp,type from mission where level = " + level + " ORDER BY RAND() limit 1");
+			//System.out.println(this.myResult);
+			
+			while(this.myResult.next()) {
+			this.contenu = this.myResult.getString("contenu");
+			this.exp = this.myResult.getInt("exp");
+			this.type= this.myResult.getString("type");
+			}
+			
+		}
+		catch (SQLException e) {
+			System.out.println("erreur connexion");
+			
+		}
+		return null;
+}
 
 	public int getExp() {
 		return exp;
@@ -52,13 +102,5 @@ public class Mission {
 		this.level = level;
 	}
 
-	public int getNumMiss() {
-		return numMiss;
-	}
-	
-	public void setNumMiss(int numMiss) {
-		this.numMiss = numMiss;
-	}
-	
 }
 

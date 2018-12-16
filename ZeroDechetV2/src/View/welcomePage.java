@@ -1,3 +1,5 @@
+package Projet;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -43,7 +45,7 @@ public class welcomePage extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 650, 500);
 		connecteBtn = new JPanel();
-		connecteBtn.setBackground(SystemColor.textHighlight);
+		connecteBtn.setBackground(new Color(0, 153, 255));
 		connecteBtn.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(connecteBtn);
 		
@@ -52,7 +54,7 @@ public class welcomePage extends JFrame {
 		JButton InscritToiBtn = new JButton("Inscrit toi :");
 		
 		JTextPane txtDeBienvenue = new JTextPane();
-		txtDeBienvenue.setForeground(Color.GRAY);
+		txtDeBienvenue.setForeground(new Color(102, 102, 102));
 		SimpleAttributeSet centrer = new SimpleAttributeSet();
 		StyleConstants.setAlignment(centrer, StyleConstants.ALIGN_CENTER);
 		txtDeBienvenue.setFont(new Font("Century Gothic", Font.PLAIN, 20));

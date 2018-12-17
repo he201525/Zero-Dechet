@@ -120,15 +120,16 @@ public class SignUp extends JFrame {
 			
 			
 			JLabel bg1 = new JLabel(); // initialization of JLabel
-			bg1.setIcon(new ImageIcon("/Users/ZitaAlmasy/Desktop/JAVA/bg11.png"));
-			bg1.setBounds(168, 0, 381, 330); 
+			bg1.setIcon(new ImageIcon("/Users/ZitaAlmasy/Desktop/JAVA/chien.png"));
+			bg1.setBounds(160, 6, 381, 330); 
 			contentPane.add(bg1);// adding JLabel to content pane
-			Image newImg = img.getScaledInstance(bg1.getWidth(), bg1.getHeight(), Image.SCALE_SMOOTH); 
-			ImageIcon MyImage = new ImageIcon(path); // set the path to the MyImage
-			Image img = MyImage.getImage(); // converting ImageIcon into Image
+			//Image newImg = img.getScaledInstance(bg1.getWidth(), bg1.getHeight(), Image.SCALE_SMOOTH); 
+			//ImageIcon MyImage = new ImageIcon(path); // set the path to the MyImage
+			//Image img = MyImage.getImage(); // converting ImageIcon into Image
 			//then scaling of this image to the size of JLabel
-			ImageIcon image = new ImageIcon(newImg); // finally set the image to the JLabel ...
+			//ImageIcon image = new ImageIcon(newImg); // finally set the image to the JLabel ...
 			
 			
 	}
 }
+

@@ -92,7 +92,7 @@ public class welcomePage extends JFrame {
 		connecteBtn.add(InscritToiBtn);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Pictures\\1280px-Fond_blanc.svg.png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Pictures\\Fond_blanc.png"));
 		lblNewLabel.setForeground(new Color(248, 248, 255));
 		lblNewLabel.setBackground(new Color(255, 255, 255));
 		lblNewLabel.setBounds(47, 43, 315, 239);

@@ -10,6 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import java.awt.Font;
 import javax.swing.JTextPane;
+import javax.swing.JButton;
 
 public class LvlPlanet extends JFrame {
 
@@ -45,35 +46,41 @@ public class LvlPlanet extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel terre1 = new JLabel("");
-		terre1.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Minibg1.png"));
-		terre1.setBounds(232, 327, 105, 105);
-		contentPane.add(terre1);
+		JButton terre6 = new JButton("");
+		terre6.setEnabled(true);
+		terre6.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Minibg6.png"));
+		terre6.setBounds(104, 50, 105, 105);
+		contentPane.add(terre6);
 		
-		JLabel terre2 = new JLabel("");
-		terre2.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Minibg2.png"));
-		terre2.setBounds(96, 327, 105, 105);
-		contentPane.add(terre2);
-		
-		JLabel terre3 = new JLabel("");
-		terre3.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Minibg3.png"));
-		terre3.setBounds(232, 191, 105, 105);
-		contentPane.add(terre3);
-		
-		JLabel terre4 = new JLabel("");
-		terre4.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Minibg4.png"));
-		terre4.setBounds(96, 191, 105, 105);
-		contentPane.add(terre4);
-		
-		JLabel terre5 = new JLabel("");
+		JButton terre5 = new JButton("");
+		terre5.setEnabled(false);
 		terre5.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Minibg5.png"));
 		terre5.setBounds(232, 50, 105, 105);
 		contentPane.add(terre5);
 		
-		JLabel terre6 = new JLabel("");
-		terre6.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Minibg6.png"));
-		terre6.setBounds(96, 50, 105, 105);
-		contentPane.add(terre6);
+		JButton terre4 = new JButton("");
+		terre4.setEnabled(false);
+		terre4.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Minibg4.png"));
+		terre4.setBounds(104, 189, 105, 105);
+		contentPane.add(terre4);
+		
+		JButton terre3 = new JButton("");
+		terre3.setEnabled(false);
+		terre3.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Minibg3.png"));
+		terre3.setBounds(232, 189, 105, 105);
+		contentPane.add(terre3);
+		
+		JButton terre2 = new JButton("");
+		terre2.setEnabled(false);
+		terre2.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Minibg2.png"));
+		terre2.setBounds(104, 327, 105, 105);
+		contentPane.add(terre2);
+		
+		JButton terre1 = new JButton("");
+		terre1.setEnabled(false);
+		terre1.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Minibg1.png"));
+		terre1.setBounds(232, 327, 105, 105);
+		contentPane.add(terre1);
 		
 		JTextPane txtLevels = new JTextPane();
 		txtLevels.setEditable(false);
@@ -90,7 +97,7 @@ public class LvlPlanet extends JFrame {
 		textLvl1.setBackground(new Color(0, 153, 255));
 		textLvl1.setForeground(new Color(255, 255, 255));
 		textLvl1.setText("1 \u00E0 5");
-		textLvl1.setBounds(127, 156, 43, 32);
+		textLvl1.setBounds(135, 157, 43, 32);
 		contentPane.add(textLvl1);
 		
 		JTextPane textLvl2 = new JTextPane();
@@ -108,7 +115,7 @@ public class LvlPlanet extends JFrame {
 		textLvl3.setForeground(new Color(255, 255, 255));
 		textLvl3.setBackground(new Color(0, 153, 255));
 		textLvl3.setText("11 \u00E0 15");
-		textLvl3.setBounds(117, 292, 61, 32);
+		textLvl3.setBounds(128, 292, 61, 32);
 		contentPane.add(textLvl3);
 		
 		JTextPane textLvl4 = new JTextPane();
@@ -126,7 +133,7 @@ public class LvlPlanet extends JFrame {
 		textLvl5.setFont(new Font("Century Gothic", Font.PLAIN, 16));
 		textLvl5.setForeground(new Color(255, 255, 255));
 		textLvl5.setText("21 \u00E0 25");
-		textLvl5.setBounds(117, 432, 61, 22);
+		textLvl5.setBounds(128, 432, 61, 22);
 		contentPane.add(textLvl5);
 		
 		JTextPane textLvl6 = new JTextPane();

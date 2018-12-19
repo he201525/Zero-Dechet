@@ -91,10 +91,11 @@ public class SignUp extends JFrame {
 			
 			JLabel bg1 = new JLabel(); // initialization of JLabel
 			bg1.setIcon(new ImageIcon("/Users/ZitaAlmasy/Desktop/JAVA/b1111bis.png"));
-			bg1.setBounds(-225, -46, 699, 513); 
+			bg1.setBounds(-227, -44, 703, 563); 
 			contentPane.add(bg1);// adding JLabel to content pane
 			
 			
 			
 	}
 }
+

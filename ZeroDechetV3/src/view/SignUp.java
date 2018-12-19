@@ -25,7 +25,6 @@ public class SignUp extends JFrame {
 			public void run() {
 				try {
 					SignUp frame = new SignUp();
-					frame.setUndecorated(true);
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();

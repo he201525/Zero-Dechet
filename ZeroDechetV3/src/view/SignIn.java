@@ -97,7 +97,7 @@ public class SignIn extends JFrame {
 			*/
 			JLabel bg1 = new JLabel(); // initialization of JLabel
 			bg1.setIcon(new ImageIcon("C:\\Users\\Republic\\Desktop\\JAVA\\b1111bis.png"));
-			bg1.setBounds(-225, -46, 699, 513); 
+			bg1.setBounds(-141, -14, 699, 513); 
 			contentPane.add(bg1);// adding JLabel to content pane
 	}
 }

@@ -46,32 +46,32 @@ public class LvlPlanet extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel terre1 = new JLabel("");
-		terre1.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\bg1.png"));
+		terre1.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Minibg1.png"));
 		terre1.setBounds(232, 327, 105, 105);
 		contentPane.add(terre1);
 		
 		JLabel terre2 = new JLabel("");
-		terre2.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\bg2.png"));
+		terre2.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Minibg2.png"));
 		terre2.setBounds(96, 327, 105, 105);
 		contentPane.add(terre2);
 		
 		JLabel terre3 = new JLabel("");
-		terre3.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\bg3.png"));
+		terre3.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Minibg3.png"));
 		terre3.setBounds(232, 191, 105, 105);
 		contentPane.add(terre3);
 		
 		JLabel terre4 = new JLabel("");
-		terre4.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\bg4.png"));
+		terre4.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Minibg4.png"));
 		terre4.setBounds(96, 191, 105, 105);
 		contentPane.add(terre4);
 		
 		JLabel terre5 = new JLabel("");
-		terre5.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\bg5.png"));
+		terre5.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Minibg5.png"));
 		terre5.setBounds(232, 50, 105, 105);
 		contentPane.add(terre5);
 		
 		JLabel terre6 = new JLabel("");
-		terre6.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\bg6.png"));
+		terre6.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Minibg6.png"));
 		terre6.setBounds(96, 50, 105, 105);
 		contentPane.add(terre6);
 		

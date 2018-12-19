@@ -80,14 +80,14 @@ public class SignIn extends JFrame {
 			MotdePasseField.setColumns(10);
 			MotdePasseField.setBounds(124, 240, 176, 26);
 			contentPane.add(MotdePasseField);
-			
+			/*
 			InscrireButton.addActionListener(new ActionListener() {
-				public void actionPerformed(A38, 0ent e) {
+				public void actionPerformed(249, -11ent e) {
 					
 					
 				}
 			});
-			
+			*/
 			JLabel bg1 = new JLabel(); // initialization of JLabel
 			bg1.setIcon(new ImageIcon("C:\\Users\\Republic\\Desktop\\JAVA\\b1111bis.png"));
 			bg1.setBounds(-225, -46, 699, 513); 

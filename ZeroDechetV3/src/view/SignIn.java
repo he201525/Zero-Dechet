@@ -44,7 +44,7 @@ public class SignIn extends JFrame {
 	public SignIn() {
 		setBackground(Color.WHITE);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 410, 450);
+		setBounds(100, 100, 410, 500);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(240, 248, 255));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -82,7 +82,7 @@ public class SignIn extends JFrame {
 			contentPane.add(MotdePasseField);
 			
 			InscrireButton.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
+				public void actionPerformed(A38, 0ent e) {
 					
 					
 				}

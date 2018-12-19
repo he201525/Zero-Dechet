@@ -28,9 +28,7 @@ public class SignIn extends JFrame {
 			public void run() {
 				try {
 					SignIn frame = new SignIn();
-					frame.setUndecorated(true);
 					frame.setVisible(true);
-					frame.setLocationRelativeTo(null);
 				} catch (Exception e) {
 					System.out.println("erreur");;
 				}

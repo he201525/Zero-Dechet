@@ -51,10 +51,10 @@ public class welcomePage extends JFrame {
 	 */
 	public welcomePage() {
 		setResizable(false);
-		setTitle("ZeroD\u00E9chet");
+		setTitle("Z\u00E9roD\u00E9chet");
 		setBackground(SystemColor.desktop);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 410, 450);
+		setBounds(100, 100, 410, 500);
 		connecteBtn = new JPanel();
 		connecteBtn.setBackground(new Color(0, 153, 255));
 		connecteBtn.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -62,11 +62,11 @@ public class welcomePage extends JFrame {
 		
 		JButton ConnecteToiBtn = new JButton("Connecte toi :");
 		ConnecteToiBtn.setFont(new Font("Century Gothic", Font.PLAIN, 13));
-		ConnecteToiBtn.setBounds(47, 351, 298, 25);
+		ConnecteToiBtn.setBounds(47, 351, 315, 25);
 		
 		JButton InscritToiBtn = new JButton("Inscrit toi :");
 		InscritToiBtn.setFont(new Font("Century Gothic", Font.PLAIN, 13));
-		InscritToiBtn.setBounds(47, 313, 298, 25);
+		InscritToiBtn.setBounds(47, 313, 315, 25);
 		SimpleAttributeSet centrer = new SimpleAttributeSet();
 		StyleConstants.setAlignment(centrer, StyleConstants.ALIGN_CENTER);
 		connecteBtn.setLayout(null);
@@ -74,19 +74,19 @@ public class welcomePage extends JFrame {
 		JLabel lblBienvenueToi = new JLabel("Bienvenue à toi !");
 		lblBienvenueToi.setForeground(SystemColor.inactiveCaptionText);
 		lblBienvenueToi.setFont(new Font("Century Gothic", Font.PLAIN, 20));
-		lblBienvenueToi.setBounds(111, 94, 234, 45);
+		lblBienvenueToi.setBounds(121, 93, 234, 45);
 		connecteBtn.add(lblBienvenueToi);
 		
 		JLabel lblCherDefenseurDe = new JLabel("Cher d\u00E9fenseur de la nature ");
 		lblCherDefenseurDe.setForeground(SystemColor.inactiveCaptionText);
 		lblCherDefenseurDe.setFont(new Font("Century Gothic", Font.PLAIN, 20));
-		lblCherDefenseurDe.setBounds(57, 121, 298, 45);
+		lblCherDefenseurDe.setBounds(64, 120, 298, 45);
 		connecteBtn.add(lblCherDefenseurDe);
 		
 		JLabel lblzerodchet = new JLabel("#ZeroD\u00E9chet");
 		lblzerodchet.setForeground(SystemColor.inactiveCaptionText);
 		lblzerodchet.setFont(new Font("Century Gothic", Font.PLAIN, 20));
-		lblzerodchet.setBounds(125, 188, 144, 45);
+		lblzerodchet.setBounds(134, 187, 144, 45);
 		connecteBtn.add(lblzerodchet);
 		connecteBtn.add(ConnecteToiBtn);
 		connecteBtn.add(InscritToiBtn);
@@ -95,7 +95,25 @@ public class welcomePage extends JFrame {
 		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Pictures\\1280px-Fond_blanc.svg.png"));
 		lblNewLabel.setForeground(new Color(248, 248, 255));
 		lblNewLabel.setBackground(new Color(255, 255, 255));
-		lblNewLabel.setBounds(47, 43, 298, 239);
+		lblNewLabel.setBounds(47, 43, 315, 239);
 		connecteBtn.add(lblNewLabel);
+		
+		JLabel lblInsta = new JLabel("Instagram : zerodechetapp");
+		lblInsta.setForeground(new Color(255, 255, 255));
+		lblInsta.setFont(new Font("Century Gothic", Font.PLAIN, 13));
+		lblInsta.setBounds(35, 429, 210, 25);
+		connecteBtn.add(lblInsta);
+		
+		JLabel lblInfo = new JLabel("N'h\u00E9sitez pas \u00E0 nous envoy\u00E9 vos photos ZeroD\u00E9chet :");
+		lblInfo.setForeground(new Color(255, 255, 255));
+		lblInfo.setFont(new Font("Century Gothic", Font.PLAIN, 13));
+		lblInfo.setBounds(35, 389, 357, 27);
+		connecteBtn.add(lblInfo);
+		
+		JLabel lblMail = new JLabel("Mail : zerodechetapp@gmail.com");
+		lblMail.setForeground(new Color(255, 255, 255));
+		lblMail.setFont(new Font("Century Gothic", Font.PLAIN, 13));
+		lblMail.setBounds(35, 415, 234, 16);
+		connecteBtn.add(lblMail);
 	}
 }

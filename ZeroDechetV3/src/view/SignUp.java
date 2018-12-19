@@ -48,49 +48,48 @@ public class SignUp extends JFrame {
 		
 			
 			JButton InscrireButton = new JButton("GO! ");
-			InscrireButton.setBackground(new Color(240, 248, 255));
-			InscrireButton.setForeground(new Color(0, 153, 255));
-			InscrireButton.setFont(new Font("Comfortaa", Font.PLAIN, 13));
-			InscrireButton.setBounds(262, 372, 117, 29);
+			InscrireButton.setBackground(new Color(0, 0, 128));
+			InscrireButton.setForeground(Color.WHITE);
+			InscrireButton.setFont(new Font("Century Gothic", Font.BOLD, 13));
+			InscrireButton.setBounds(154, 383, 117, 38);
 			contentPane.add(InscrireButton);
-			
+
 			PseudotextField = new JTextField();
-			PseudotextField.setBounds(124, 136, 176, 26);
+			PseudotextField.setForeground(new Color(0, 0, 128));
+			PseudotextField.setFont(new Font("Century Gothic", Font.PLAIN, 15));
+			PseudotextField.setBounds(125, 190, 176, 38);
 			contentPane.add(PseudotextField);
 			PseudotextField.setColumns(10);
-			
-			JLabel emailLBL = new JLabel("Email");
-			emailLBL.setForeground(Color.WHITE);
-			emailLBL.setFont(new Font("Comfortaa", Font.BOLD, 15));
-			emailLBL.setBounds(124, 186, 61, 16);
-			contentPane.add(emailLBL);
-			
+
+			JLabel inscriptionLBL = new JLabel("INSCRIPTION");
+			inscriptionLBL.setForeground(new Color(0, 0, 128));
+			inscriptionLBL.setFont(new Font("Century Gothic", Font.BOLD, 20));
+			inscriptionLBL.setBounds(125, 95, 157, 49);
+			contentPane.add(inscriptionLBL);
+
+
 			JLabel PseudoLBL = new JLabel("Pseudo");
 			PseudoLBL.setForeground(Color.WHITE);
-			PseudoLBL.setFont(new Font("Comfortaa", Font.BOLD, 15));
-			PseudoLBL.setBounds(124, 116, 61, 16);
+			PseudoLBL.setFont(new Font("Century Gothic", Font.BOLD, 19));
+			PseudoLBL.setBounds(125, 160, 89, 29);
 			contentPane.add(PseudoLBL);
-			
-			EmailtextField = new JTextField();
-			EmailtextField.setColumns(10);
-			EmailtextField.setBounds(124, 206, 176, 26);
-			contentPane.add(EmailtextField);
-			
+
 			JLabel MotdePasseLBL = new JLabel("Mot de Passe");
 			MotdePasseLBL.setForeground(Color.WHITE);
-			MotdePasseLBL.setFont(new Font("Comfortaa", Font.BOLD, 15));
-			MotdePasseLBL.setBounds(124, 260, 130, 16);
+			MotdePasseLBL.setFont(new Font("Century Gothic", Font.BOLD, 19));
+			MotdePasseLBL.setBounds(125, 250, 192, 36);
 			contentPane.add(MotdePasseLBL);
-			
+
 			MotdePassetextField = new JTextField();
+			MotdePassetextField.setForeground(new Color(0, 0, 128));
 			MotdePassetextField.setColumns(10);
-			MotdePassetextField.setBounds(124, 276, 176, 26);
+			MotdePassetextField.setBounds(125, 280, 176, 38);
 			contentPane.add(MotdePassetextField);
 			
 			
 			JLabel bg1 = new JLabel(); // initialization of JLabel
 			bg1.setIcon(new ImageIcon("/Users/ZitaAlmasy/Desktop/JAVA/b1111bis.png"));
-			bg1.setBounds(-227, -44, 703, 563); 
+			bg1.setBounds(-569, -23, 1027, 618); 
 			contentPane.add(bg1);// adding JLabel to content pane
 			
 			

@@ -1,4 +1,3 @@
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -10,6 +9,7 @@ import java.awt.Font;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.JButton;
+import javax.swing.ImageIcon;
 
 public class level extends JFrame {
 
@@ -43,6 +43,8 @@ public class level extends JFrame {
 	 * Create the frame.
 	 */
 	public level() {
+		setTitle("Z\u00E9roD\u00E9chet");
+		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 410, 500);
 		contentPane = new JPanel();
@@ -104,6 +106,7 @@ public class level extends JFrame {
 		contentPane.add(mission3v);
 		
 		XPm2 = new JTextField();
+		XPm2.setEditable(false);
 		XPm2.setBackground(new Color(255, 102, 0));
 		XPm2.setForeground(new Color(255, 255, 255));
 		XPm2.setFont(new Font("Comfortaa", Font.PLAIN, 13));
@@ -114,6 +117,7 @@ public class level extends JFrame {
 		XPm2.setColumns(10);
 		
 		XPm1 = new JTextField();
+		XPm1.setEditable(false);
 		XPm1.setText("150 XP");
 		XPm1.setHorizontalAlignment(SwingConstants.CENTER);
 		XPm1.setForeground(Color.WHITE);
@@ -124,6 +128,7 @@ public class level extends JFrame {
 		contentPane.add(XPm1);
 		
 		XPm3 = new JTextField();
+		XPm3.setEditable(false);
 		XPm3.setText("150 XP");
 		XPm3.setHorizontalAlignment(SwingConstants.CENTER);
 		XPm3.setForeground(Color.WHITE);
@@ -133,17 +138,35 @@ public class level extends JFrame {
 		XPm3.setBounds(308, 333, 77, 26);
 		contentPane.add(XPm3);
 		
+		JLabel XpRecu = new JLabel("");
+		XpRecu.setHorizontalAlignment(SwingConstants.RIGHT);
+		XpRecu.setForeground(Color.WHITE);
+		XpRecu.setFont(new Font("Comfortaa", Font.PLAIN, 13));
+		XpRecu.setBounds(268, 20, 52, 27);
+		contentPane.add(XpRecu);
+		
+		JLabel fondOrange = new JLabel("");
+		fondOrange.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\fond_orange.png"));
+		fondOrange.setHorizontalAlignment(SwingConstants.RIGHT);
+		fondOrange.setForeground(Color.WHITE);
+		fondOrange.setFont(new Font("Comfortaa", Font.BOLD, 13));
+		fondOrange.setBackground(new Color(255, 102, 0));
+		fondOrange.setBounds(285, 19, 41, 28);
+		contentPane.add(fondOrange);
+		
 		totalXP = new JTextField();
-		totalXP.setText("...    /  150 XP");
+		totalXP.setEditable(false);
+		totalXP.setText(" /  150 XP");
 		totalXP.setHorizontalAlignment(SwingConstants.RIGHT);
 		totalXP.setForeground(Color.WHITE);
 		totalXP.setFont(new Font("Comfortaa", Font.BOLD, 13));
 		totalXP.setColumns(10);
 		totalXP.setBackground(new Color(255, 102, 0));
-		totalXP.setBounds(267, 19, 122, 28);
+		totalXP.setBounds(323, 19, 66, 28);
 		contentPane.add(totalXP);
 		
 		levelfld = new JTextField();
+		levelfld.setEditable(false);
 		levelfld.setHorizontalAlignment(SwingConstants.LEFT);
 		levelfld.setBounds(6, 6, 398, 50);
 		levelfld.setFont(new Font("Comfortaa", Font.BOLD, 20));
@@ -154,6 +177,7 @@ public class level extends JFrame {
 		levelfld.setColumns(10);
 		
 		phraseM1txt = new JTextField();
+		phraseM1txt.setEditable(false);
 		phraseM1txt.setBackground(new Color(153, 153, 153));
 		phraseM1txt.setForeground(Color.WHITE);
 		phraseM1txt.setFont(new Font("Comfortaa", Font.PLAIN, 13));
@@ -163,6 +187,7 @@ public class level extends JFrame {
 		phraseM1txt.setColumns(10);
 		
 		pharseM2txt = new JTextField();
+		pharseM2txt.setEditable(false);
 		pharseM2txt.setText(" Ramasse 5 canettes");
 		pharseM2txt.setForeground(new Color(255, 255, 255));
 		pharseM2txt.setFont(new Font("Comfortaa", Font.PLAIN, 13));
@@ -172,6 +197,7 @@ public class level extends JFrame {
 		contentPane.add(pharseM2txt);
 		
 		phraseM3txt = new JTextField();
+		phraseM3txt.setEditable(false);
 		phraseM3txt.setText(" Fait un composte dans le fond de ton jardin");
 		phraseM3txt.setForeground(Color.WHITE);
 		phraseM3txt.setFont(new Font("Comfortaa", Font.PLAIN, 13));

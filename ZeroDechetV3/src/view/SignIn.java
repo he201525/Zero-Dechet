@@ -11,6 +11,7 @@ import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.SwingConstants;
 
 
 public class SignIn extends JFrame {
@@ -40,6 +41,8 @@ public class SignIn extends JFrame {
 	 * Create the frame.
 	 */
 	public SignIn() {
+		setTitle("Z\u00E9roD\u00E9chet");
+		setResizable(false);
 		setBackground(Color.WHITE);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 410, 500);
@@ -69,6 +72,13 @@ public class SignIn extends JFrame {
 	        PseudotextField.setBounds(125, 190, 176, 38);
 	        contentPane.add(PseudotextField);
 	        PseudotextField.setColumns(10);
+	        
+	        JLabel lblNewLabel = new JLabel("Erreur");
+	        lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+	        lblNewLabel.setFont(new Font("Century Gothic", Font.PLAIN, 13));
+	        lblNewLabel.setForeground(Color.RED);
+	        lblNewLabel.setBounds(125, 331, 176, 39);
+	        contentPane.add(lblNewLabel);
 			
 	        JLabel PseudoLBL = new JLabel("Pseudo");
 	        PseudoLBL.setForeground(Color.WHITE);
@@ -96,7 +106,7 @@ public class SignIn extends JFrame {
 			});
 			*/
 			JLabel bg1 = new JLabel(); // initialization of JLabel
-			bg1.setIcon(new ImageIcon("C:\\Users\\Republic\\Desktop\\JAVA\\b1111bis.png"));
+			bg1.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\b1111bis.png"));
 			bg1.setBounds(-141, -14, 699, 513); 
 			contentPane.add(bg1);// adding JLabel to content pane
 	}

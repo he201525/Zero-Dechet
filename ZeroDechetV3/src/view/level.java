@@ -22,6 +22,9 @@ public class level extends JFrame {
 	private JTextField XPm1;
 	private JTextField XPm3;
 	private JTextField totalXP;
+	private JTextField grism1txt;
+	private JTextField grism2txt;
+	private JTextField grism3txt;
 
 	/**
 	 * Launch the application.
@@ -182,7 +185,7 @@ public class level extends JFrame {
 		phraseM1txt.setForeground(Color.WHITE);
 		phraseM1txt.setFont(new Font("Comfortaa", Font.PLAIN, 13));
 		phraseM1txt.setText(" Achète locale bb");
-		phraseM1txt.setBounds(6, 81, 398, 100);
+		phraseM1txt.setBounds(6, 81, 347, 100);
 		contentPane.add(phraseM1txt);
 		phraseM1txt.setColumns(10);
 		
@@ -193,7 +196,7 @@ public class level extends JFrame {
 		pharseM2txt.setFont(new Font("Comfortaa", Font.PLAIN, 13));
 		pharseM2txt.setColumns(10);
 		pharseM2txt.setBackground(new Color(153, 153, 153));
-		pharseM2txt.setBounds(6, 220, 398, 100);
+		pharseM2txt.setBounds(6, 220, 347, 100);
 		contentPane.add(pharseM2txt);
 		
 		phraseM3txt = new JTextField();
@@ -203,7 +206,34 @@ public class level extends JFrame {
 		phraseM3txt.setFont(new Font("Comfortaa", Font.PLAIN, 13));
 		phraseM3txt.setColumns(10);
 		phraseM3txt.setBackground(new Color(153, 153, 153));
-		phraseM3txt.setBounds(6, 355, 398, 100);
+		phraseM3txt.setBounds(6, 355, 347, 100);
 		contentPane.add(phraseM3txt);
+		
+		grism1txt = new JTextField();
+		grism1txt.setForeground(Color.WHITE);
+		grism1txt.setFont(new Font("Comfortaa", Font.PLAIN, 13));
+		grism1txt.setEditable(false);
+		grism1txt.setColumns(10);
+		grism1txt.setBackground(new Color(153, 153, 153));
+		grism1txt.setBounds(350, 81, 52, 100);
+		contentPane.add(grism1txt);
+		
+		grism2txt = new JTextField();
+		grism2txt.setForeground(Color.WHITE);
+		grism2txt.setFont(new Font("Comfortaa", Font.PLAIN, 13));
+		grism2txt.setEditable(false);
+		grism2txt.setColumns(10);
+		grism2txt.setBackground(new Color(153, 153, 153));
+		grism2txt.setBounds(350, 220, 52, 100);
+		contentPane.add(grism2txt);
+		
+		grism3txt = new JTextField();
+		grism3txt.setForeground(Color.WHITE);
+		grism3txt.setFont(new Font("Comfortaa", Font.PLAIN, 13));
+		grism3txt.setEditable(false);
+		grism3txt.setColumns(10);
+		grism3txt.setBackground(new Color(153, 153, 153));
+		grism3txt.setBounds(350, 355, 52, 100);
+		contentPane.add(grism3txt);
 	}
 }

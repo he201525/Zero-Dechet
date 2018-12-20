@@ -151,37 +151,37 @@ public class level extends JFrame {
 		JButton ok1BTN = new JButton("V");
 		ok1BTN.setFont(new Font("Comfortaa", Font.PLAIN, 13));
 		ok1BTN.setBackground(new Color(51, 204, 0));
-		ok1BTN.setBounds(355, 100, 41, 28);
+		ok1BTN.setBounds(349, 100, 47, 28);
 		contentPane.add(ok1BTN);
 		
 		JButton no1BTN = new JButton("X");
 		no1BTN.setFont(new Font("Comfortaa", Font.PLAIN, 13));
 		no1BTN.setBackground(new Color(204, 51, 0));
-		no1BTN.setBounds(355, 140, 41, 28);
+		no1BTN.setBounds(349, 140, 47, 28);
 		contentPane.add(no1BTN);
 		
 		JButton ok2BTN = new JButton("V");
 		ok2BTN.setFont(new Font("Comfortaa", Font.PLAIN, 13));
 		ok2BTN.setBackground(new Color(51, 204, 0));
-		ok2BTN.setBounds(355, 235, 41, 28);
+		ok2BTN.setBounds(349, 235, 47, 28);
 		contentPane.add(ok2BTN);
 		
 		JButton no2BTN = new JButton("X");
 		no2BTN.setFont(new Font("Comfortaa", Font.PLAIN, 13));
 		no2BTN.setBackground(new Color(204, 51, 0));
-		no2BTN.setBounds(355, 275, 41, 28);
+		no2BTN.setBounds(349, 275, 47, 28);
 		contentPane.add(no2BTN);
 		
 		JButton ok3BTN = new JButton("V");
 		ok3BTN.setFont(new Font("Comfortaa", Font.PLAIN, 13));
 		ok3BTN.setBackground(new Color(51, 204, 0));
-		ok3BTN.setBounds(355, 371, 41, 28);
+		ok3BTN.setBounds(349, 371, 47, 28);
 		contentPane.add(ok3BTN);
 		
 		JButton no3BTN = new JButton("X");
 		no3BTN.setFont(new Font("Comfortaa", Font.PLAIN, 13));
 		no3BTN.setBackground(new Color(204, 51, 0));
-		no3BTN.setBounds(355, 411, 41, 28);
+		no3BTN.setBounds(349, 411, 47, 28);
 		contentPane.add(no3BTN);
 		
 		grism1txt = new JTextField();
@@ -190,7 +190,7 @@ public class level extends JFrame {
 		grism1txt.setEditable(false);
 		grism1txt.setColumns(10);
 		grism1txt.setBackground(new Color(153, 153, 153));
-		grism1txt.setBounds(350, 81, 52, 100);
+		grism1txt.setBounds(344, 81, 58, 100);
 		contentPane.add(grism1txt);
 		
 		grism2txt = new JTextField();
@@ -199,7 +199,7 @@ public class level extends JFrame {
 		grism2txt.setEditable(false);
 		grism2txt.setColumns(10);
 		grism2txt.setBackground(new Color(153, 153, 153));
-		grism2txt.setBounds(350, 220, 52, 100);
+		grism2txt.setBounds(344, 220, 58, 100);
 		contentPane.add(grism2txt);
 		
 		grism3txt = new JTextField();
@@ -208,40 +208,40 @@ public class level extends JFrame {
 		grism3txt.setEditable(false);
 		grism3txt.setColumns(10);
 		grism3txt.setBackground(new Color(153, 153, 153));
-		grism3txt.setBounds(350, 355, 52, 100);
+		grism3txt.setBounds(344, 355, 58, 100);
 		contentPane.add(grism3txt);
 		
 		JLabel lblMission = new JLabel("Mission1");
 		lblMission.setFont(new Font("Comfortaa", Font.PLAIN, 13));
 		lblMission.setForeground(Color.WHITE);
-		lblMission.setBounds(16, 81, 327, 100);
+		lblMission.setBounds(16, 81, 321, 100);
 		contentPane.add(lblMission);
 		
 		JLabel lblMission2 = new JLabel("Mission2");
 		lblMission2.setFont(new Font("Comfortaa", Font.PLAIN, 13));
 		lblMission2.setForeground(Color.WHITE);
-		lblMission2.setBounds(16, 220, 327, 100);
+		lblMission2.setBounds(16, 220, 321, 100);
 		contentPane.add(lblMission2);
 		
 		JLabel lblMission_1 = new JLabel("Mission3");
 		lblMission_1.setForeground(Color.WHITE);
 		lblMission_1.setFont(new Font("Comfortaa", Font.PLAIN, 13));
-		lblMission_1.setBounds(16, 355, 327, 100);
+		lblMission_1.setBounds(16, 355, 321, 100);
 		contentPane.add(lblMission_1);
 		
 		JLabel gris1 = new JLabel("");
 		gris1.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Fond_gris.png"));
-		gris1.setBounds(16, 81, 327, 100);
+		gris1.setBounds(16, 81, 321, 100);
 		contentPane.add(gris1);
 		
 		JLabel gris2 = new JLabel("");
 		gris2.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Fond_gris.png"));
-		gris2.setBounds(16, 220, 327, 100);
+		gris2.setBounds(16, 220, 321, 100);
 		contentPane.add(gris2);
 		
 		JLabel gris3 = new JLabel("");
 		gris3.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\Fond_gris.png"));
-		gris3.setBounds(16, 355, 327, 100);
+		gris3.setBounds(16, 355, 321, 100);
 		contentPane.add(gris3);
 	}
 }

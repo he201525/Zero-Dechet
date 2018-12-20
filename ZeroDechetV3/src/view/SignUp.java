@@ -49,12 +49,12 @@ public class SignUp extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 			
-			JLabel lblErreur = new JLabel("Erreur");
-			lblErreur.setHorizontalAlignment(SwingConstants.CENTER);
-			lblErreur.setForeground(Color.RED);
-			lblErreur.setFont(new Font("Century Gothic", Font.PLAIN, 13));
-			lblErreur.setBounds(125, 331, 176, 39);
-			contentPane.add(lblErreur);
+			JLabel Erreur = new JLabel("Erreur");
+			Erreur.setHorizontalAlignment(SwingConstants.CENTER);
+			Erreur.setForeground(Color.RED);
+			Erreur.setFont(new Font("Century Gothic", Font.PLAIN, 13));
+			Erreur.setBounds(125, 43, 176, 39);
+			contentPane.add(Erreur);
 		
 			
 			JButton InscrireButton = new JButton("GO! ");

@@ -8,6 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.Font;
+import javax.swing.SwingConstants;
 
 
 public class SignUp extends JFrame {
@@ -37,6 +38,8 @@ public class SignUp extends JFrame {
 	 * Create the frame.
 	 */
 	public SignUp() {
+		setTitle("Z\u00E9roD\u00E9chet");
+		setResizable(false);
 		setBackground(Color.WHITE);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 410, 500);
@@ -45,6 +48,13 @@ public class SignUp extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+			
+			JLabel lblErreur = new JLabel("Erreur");
+			lblErreur.setHorizontalAlignment(SwingConstants.CENTER);
+			lblErreur.setForeground(Color.RED);
+			lblErreur.setFont(new Font("Century Gothic", Font.PLAIN, 13));
+			lblErreur.setBounds(125, 331, 176, 39);
+			contentPane.add(lblErreur);
 		
 			
 			JButton InscrireButton = new JButton("GO! ");
@@ -88,12 +98,8 @@ public class SignUp extends JFrame {
 			
 			
 			JLabel bg1 = new JLabel(); // initialization of JLabel
-			bg1.setIcon(new ImageIcon("/Users/ZitaAlmasy/Desktop/JAVA/b1111bis.png"));
+			bg1.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\b1111bis.png"));
 			bg1.setBounds(-569, -23, 1027, 618); 
-			contentPane.add(bg1);// adding JLabel to content pane
-			
-			
-			
+			contentPane.add(bg1);// adding JLabel to content pane		
 	}
 }
-

@@ -63,6 +63,8 @@ public class MissionPerso extends JFrame {
 		
 		JButton envoyerBTN = new JButton("Envoyer");
 		envoyerBTN.setBackground(new Color(51, 204, 0));
+		envoyerBTN.setForeground(Color.WHITE);
+		envoyerBTN.setFont(new Font("Comfortaa", Font.PLAIN, 13));
 		envoyerBTN.setBounds(296, 389, 94, 28);
 		contentPane.add(envoyerBTN);
 		

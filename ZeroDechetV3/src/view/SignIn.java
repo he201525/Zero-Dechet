@@ -73,12 +73,12 @@ public class SignIn extends JFrame {
 	        contentPane.add(PseudotextField);
 	        PseudotextField.setColumns(10);
 	        
-	        JLabel lblNewLabel = new JLabel("Erreur");
-	        lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-	        lblNewLabel.setFont(new Font("Century Gothic", Font.PLAIN, 13));
-	        lblNewLabel.setForeground(Color.RED);
-	        lblNewLabel.setBounds(125, 331, 176, 39);
-	        contentPane.add(lblNewLabel);
+	        JLabel Erreur = new JLabel("Erreur");
+	        Erreur.setHorizontalAlignment(SwingConstants.CENTER);
+	        Erreur.setFont(new Font("Century Gothic", Font.PLAIN, 13));
+	        Erreur.setForeground(Color.RED);
+	        Erreur.setBounds(125, 43, 176, 39);
+	        contentPane.add(Erreur);
 			
 	        JLabel PseudoLBL = new JLabel("Pseudo");
 	        PseudoLBL.setForeground(Color.WHITE);

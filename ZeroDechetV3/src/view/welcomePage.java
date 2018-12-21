@@ -1,32 +1,36 @@
+package view;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.StyleConstants;
 
+import view.SignUp;
+import view.SignIn;
+
 import java.awt.Color;
 import java.awt.SystemColor;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.Font;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
-import javax.swing.JButton;
-import javax.swing.LayoutStyle.ComponentPlacement;
-import javax.swing.JTextPane;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
-import java.awt.FlowLayout;
-import javax.swing.SwingConstants;
-import java.awt.Window.Type;
-import javax.swing.JEditorPane;
-import javax.swing.UIManager;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 
-public class welcomePage extends JFrame {
+/**
+ * Cette classe est la vue pour choisir si on s'inscrit ou se connecte
+ * @author Sébastien Raemdonck
+ * @author Aymeric Ponjée
+ * @author Zita Almasy
+ *
+ */
+public class WelcomePage extends JFrame {
 
 	private JPanel connecteBtn;
+	private JButton ConnecteToiBtn;
 
 	/**
 	 * Launch the application.
@@ -35,19 +39,26 @@ public class welcomePage extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					welcomePage frame = new welcomePage();
+					WelcomePage frame = new WelcomePage();
 					frame.setVisible(true);
+					frame.setLocationRelativeTo(null);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
 			}
 		});
 	}
+	
+	public void closeWelcomePage() {
+		this.dispose();
+	}
 
 	/**
-	 * Create the frame.
+	 * Création de la fenêtre 
 	 */
-	public welcomePage() {
+	public WelcomePage() {
+		
+		
 		setResizable(false);
 		setTitle("Z\u00E9roD\u00E9chet");
 		setBackground(SystemColor.desktop);
@@ -58,7 +69,7 @@ public class welcomePage extends JFrame {
 		connecteBtn.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(connecteBtn);
 		
-		JButton ConnecteToiBtn = new JButton("Connecte toi :");
+		ConnecteToiBtn = new JButton("Connecte toi :");
 		ConnecteToiBtn.setFont(new Font("Century Gothic", Font.PLAIN, 13));
 		ConnecteToiBtn.setBounds(47, 351, 315, 25);
 		
@@ -90,7 +101,7 @@ public class welcomePage extends JFrame {
 		connecteBtn.add(InscritToiBtn);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Pictures\\Fond_blanc.png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Republic\\Desktop\\JAVA\\Fond_blanc.png"));
 		lblNewLabel.setForeground(new Color(248, 248, 255));
 		lblNewLabel.setBackground(new Color(255, 255, 255));
 		lblNewLabel.setBounds(47, 43, 315, 239);
@@ -113,5 +124,23 @@ public class welcomePage extends JFrame {
 		lblMail.setFont(new Font("Century Gothic", Font.PLAIN, 13));
 		lblMail.setBounds(35, 415, 234, 16);
 		connecteBtn.add(lblMail);
+		
+		ConnecteToiBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(e.getSource() == ConnecteToiBtn) {
+					closeWelcomePage();
+					SignIn.launch();
+					}
+				}
+		});
+		InscritToiBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(e.getSource() == InscritToiBtn) {
+					closeWelcomePage();
+					SignUp.launch();
+					}
+				}
+		});
+		
 	}
 }

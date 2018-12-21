@@ -2,9 +2,18 @@ package model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+
+/*
+ * Cette classe impl√©mente un joueur qui a un pseudo, un mot de passe, de l'exp√©rience et le level du joueur.
+ * Groupe 16
+ * @author S√©bastien Raemdonck
+ * @author Aymeric Ponj√©e
+ * @author Zita Almasy
+ */
 
 public class Joueur {
 	
@@ -12,20 +21,21 @@ public class Joueur {
 	private static String user = "root";
 	private static String pwd = "root";
 	
-	private Connection myConnection = null;//pas de static car indÈpendante ‡ chaque mission
-	private  Statement myState = null;
+	private Connection myConnection = null;//pas de static car ind√©pendante √† chaque mission
+	private Statement myState = null;
 	private ResultSet myResult = null;
 	
-	private static String sql = "";
-	private static String driver;
+	private String sql = "";
+	private String driver;
 	
 	private String pseudo;
 	private String pwdUser;
 	private int expUser;
 	private int levelUser;
-
+	
+	
 	/**
-	 * Constructeur vide pour pouvoir instancier un Joueur et donc pouvoir accÈder aux mÈthodes de la classe
+	 * Constructeur vide pour pouvoir instancier un Joueur et donc pouvoir acc√©der aux m√©thodes de la classe
 	 */
 	
 	public Joueur() {
@@ -38,9 +48,10 @@ public class Joueur {
 			this.myState = myConnection.createStatement();
 			this.myResult = myState.executeQuery("Select * FROM user");
 			
+			this.pseudo = pseudo;
+			
 			while(this.myResult.next()) {
 				if(pseudo.equals(this.myResult.getString(1)) && pwdUser.equals(this.myResult.getString(2))) {
-					
 					return true;
 				}
 			} 
@@ -48,15 +59,29 @@ public class Joueur {
 		catch (SQLException e) {
 			System.out.println("erreur connexion(compte)");
 		}
+		finally {
+			try {
+				 myState.close();
+				 myConnection.close();
+			} catch(SQLException e) {
+				e.printStackTrace();
+			}
+		}
 			return false;
 	}
 	
+	/**
+	 * Cette methode permet √† l'utilisateur de se connecter 
+	 */
 	public void Identification() {
 		try {
-			
+			System.out.println("0");
 			this.driver = "com.mysql.cj.jdbc.Driver";
-			this.myConnection = DriverManager.getConnection(url, user, pwd);
+			System.out.println("1");
+			this.myConnection = DriverManager.getConnection(this.url, this.user, this.pwd);
+			System.out.println("2");
 			this.myState = myConnection.createStatement();
+			System.out.println("3");
 			this.sql = "";
 			this.myResult = myState.executeQuery("Select * FROM user where pseudo = '" + pseudo + "'");
 			
@@ -81,46 +106,45 @@ public class Joueur {
 		
 	}
 	
-	public void Register() {
-try {
+	/**
+	 * Cette methode permet √† l'utilisateur de s'inscrire
+	 */
+	public boolean Register(String pseudo,String pwd) {
+		try {
 			
-			this.driver = "com.mysql.cj.jdbc.Driver";
-			this.myConnection = DriverManager.getConnection(url, user, pwd);
+			
+			this.myConnection = DriverManager.getConnection(this.url, this.user, this.pwd);
 			this.myState = myConnection.createStatement();
-			this.sql = "Select * from wheel where player = '" /*+ ViewBetAccount.getUsername().getText() + "'"*/;
-			this.myResult = myState.executeQuery(sql);
+			this.myState.executeUpdate("insert into user (pseudo, pwd) values('" + pseudo + "', '" + pwd + "');");
 			
-			/*
-			if(ViewBetAccount.getUsername().getText().toString().equals("")) {//si pas de champ rempli
-				ViewBetAccount.getMsgError().setText("PLEASE CHOOSE A LOGIN");
-			}else if(rs.next()) {//si pseudo existe dÈj‡
-				ViewBetAccount.getMsgError().setText("THIS LOGIN ALREADY EXIST");
-				ViewBetAccount.getPassword().setText("");
-				ViewBetAccount.getPassword1().setText("");
-			} else {
-				if(ViewBetAccount.getPassword().getText().toString().equals("")) {
-					ViewBetAccount.getMsgError().setText("PLEASE CHOOSE A PASSWORD");
-					ViewBetAccount.getPassword().setText("");
-					ViewBetAccount.getPassword1().setText("");
-				} else if(ViewBetAccount.getPassword().getText().toString().equals(ViewBetAccount.getPassword1().getText().toString())){
-					String sql = "INSERT INTO user (pseudo, pwd) VALUES ('" + seb1 +"', '"+ pwd + "');");
-					
-					st.executeUpdate(sql);
-					ViewBetAccount.getMsgError().setText("ACCOUNT CREATED!");
-					ViewBetAccount.getPassword().setText("");
-					ViewBetAccount.getPassword1().setText("");
-					ViewBetAccount.getUsername().setText("");
-				} else { 
-					ViewBetAccount.getMsgError().setText("PASSWORD NOT CORRECT");
-					ViewBetAccount.getPassword().setText("");
-					ViewBetAccount.getPassword1().setText("");
-				}
-			}}*/
+			return true;
 			}
 		
 		catch (SQLException e) {
-			System.out.println("erreur inscription");
+			System.out.println("erreur inscription" + e);
 			
+		}
+		return false;
+	}
+	
+	/**
+	 * Cette methode permet d'ajouter de l'exp √† l'utilisateur
+	 */
+	public void addExp(String pseudo, int exp) {
+		try {
+			this.driver = "com.mysql.cj.jdbc.Driver";
+			this.myConnection = DriverManager.getConnection(url, user, pwd);
+			this.myState = myConnection.createStatement();
+			this.sql = "UPDATE user SET expUser = ? where pseudo = ?";
+			PreparedStatement preparedStatement = this.myConnection.prepareStatement(sql);
+			
+			preparedStatement.setInt(1, exp);
+			preparedStatement.setString(2, pseudo);
+			
+			preparedStatement.executeUpdate();
+		}
+		catch(SQLException e) {
+			System.out.println("erreur ajouter l'exp");
 		}
 		finally {
 			try {
@@ -154,10 +178,12 @@ try {
 				e.printStackTrace();
 			}
 		}
-	
-	
 	}
 	
+	/**
+	 * getters and setters
+	 * @return
+	 */
 	public String getSql() {
 		return sql;
 	}

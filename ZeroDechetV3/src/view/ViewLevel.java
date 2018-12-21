@@ -16,9 +16,14 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.JButton;
 import javax.swing.ImageIcon;
-import javax.swing.JTextPane;
-import java.awt.SystemColor;
 
+/*
+ * Cette classe permet de créer une JFrame affiche les levels.
+ * Groupe 16
+ * @author Sébastien Raemdonck
+ * @author Aymeric Ponjée
+ * @author Zita Almasy
+ */
 public class ViewLevel extends JFrame {
 
 	private JPanel contentPane;
@@ -50,16 +55,17 @@ public class ViewLevel extends JFrame {
 	private JLabel gris3;
 
 	static Level lvl;
-	static Joueur player;
+//	static Joueur player;
+	Joueur player = new Joueur();
+	
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+	public static void launch(int niveau) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					player = new Joueur();
-					//lvl = new Level(1);
+					Level lvl = new Level(niveau);
 					ViewLevel frame = new ViewLevel();
 					frame.setVisible(true);
 					frame.setLocationRelativeTo(null);
@@ -146,7 +152,7 @@ public class ViewLevel extends JFrame {
 		
 		XPm1 = new JTextField();
 		XPm1.setEditable(false);
-		XPm1.setText(""/*lvl.getMissions().get(0).getExp() + " XP"*/);
+		XPm1.setText(lvl.getMissions().get(0).getExp() + " XP");
 		XPm1.setHorizontalAlignment(SwingConstants.CENTER);
 		XPm1.setForeground(Color.WHITE);
 		XPm1.setFont(new Font("Century Gothic", Font.PLAIN, 13));
@@ -161,14 +167,14 @@ public class ViewLevel extends JFrame {
 		XPm2.setForeground(new Color(255, 255, 255));
 		XPm2.setFont(new Font("Century Gothic", Font.PLAIN, 13));
 		XPm2.setHorizontalAlignment(SwingConstants.CENTER);
-		XPm2.setText(""/*lvl.getMissions().get(1).getExp() + " XP"*/);
+		XPm2.setText(lvl.getMissions().get(1).getExp() + " XP");
 		XPm2.setBounds(308, 197, 77, 26);
 		contentPane.add(XPm2);
 		XPm2.setColumns(10);
 		
 		XPm3 = new JTextField();
 		XPm3.setEditable(false);
-		XPm3.setText(""/*lvl.getMissions().get(2).getExp() + " XP"*/);
+		XPm3.setText(lvl.getMissions().get(2).getExp() + " XP");
 		XPm3.setHorizontalAlignment(SwingConstants.CENTER);
 		XPm3.setForeground(Color.WHITE);
 		XPm3.setFont(new Font("Century Gothic", Font.PLAIN, 13));
@@ -240,19 +246,19 @@ public class ViewLevel extends JFrame {
 		grism3txt.setBounds(344, 355, 58, 100);
 		contentPane.add(grism3txt);
 		
-		lblMission1 = new JLabel(/*lvl.getMissions().get(0).getContenu()*/);
+		lblMission1 = new JLabel(lvl.getMissions().get(0).getContenu());
 		lblMission1.setFont(new Font("Century Gothic", Font.PLAIN, 13));
 		lblMission1.setForeground(Color.WHITE);
 		lblMission1.setBounds(16, 81, 321, 100);
 		contentPane.add(lblMission1);
 		
-		lblMission2 = new JLabel(/*lvl.getMissions().get(1).getContenu()*/);
+		lblMission2 = new JLabel(lvl.getMissions().get(1).getContenu());
 		lblMission2.setFont(new Font("Century Gothic", Font.PLAIN, 13));
 		lblMission2.setForeground(Color.WHITE);
 		lblMission2.setBounds(16, 220, 321, 100);
 		contentPane.add(lblMission2);
 		
-		lblMission3 = new JLabel(/*lvl.getMissions().get(2).getContenu()*/);
+		lblMission3 = new JLabel(lvl.getMissions().get(2).getContenu());
 		lblMission3.setForeground(Color.WHITE);
 		lblMission3.setFont(new Font("Century Gothic", Font.PLAIN, 13));
 		lblMission3.setBounds(16, 355, 321, 100);

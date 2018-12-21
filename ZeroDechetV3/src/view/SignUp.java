@@ -89,14 +89,13 @@ public class SignUp extends JFrame {
 			MotdePasseLBL.setFont(new Font("Century Gothic", Font.BOLD, 19));
 			MotdePasseLBL.setBounds(125, 250, 192, 36);
 			contentPane.add(MotdePasseLBL);
-
-			MotdePassetextField = new JTextField();
-			MotdePassetextField.setForeground(new Color(0, 0, 128));
+			
+			MotdePassetextField = new JPasswordField();
 			MotdePassetextField.setColumns(10);
 			MotdePassetextField.setBounds(125, 280, 176, 38);
+			MotdePassetextField.setForeground(new Color(0, 0, 128));
 			contentPane.add(MotdePassetextField);
-			
-			
+		
 			JLabel bg1 = new JLabel(); // initialization of JLabel
 			bg1.setIcon(new ImageIcon("C:\\Users\\Aymeric\\Documents\\Ephec\\bac 2\\Java\\ZeroDechet\\Img\\b1111bis.png"));
 			bg1.setBounds(-569, -23, 1027, 618); 
